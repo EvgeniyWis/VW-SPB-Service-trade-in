@@ -46,7 +46,7 @@
 .main_screen .breadcrumbs--text--adaptive {
   display: none;
 }
-@media (max-width: 1550px) {
+@media (max-width: 1600px) {
   .main_screen .breadcrumbs {
     padding: 10px 100px;
   }
