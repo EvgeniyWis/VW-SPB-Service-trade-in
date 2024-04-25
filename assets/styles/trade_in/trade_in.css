@@ -5,7 +5,28 @@
   padding: 0 250px;
   margin-top: 20px;
   /* Текст в первой колонке */
+  /* Кнопка "Заказать" */
   /* Аккордион */
+}
+@media (max-width: 1600px) {
+  .trade-in {
+    padding: 0 100px;
+  }
+}
+@media (max-width: 1200px) {
+  .trade-in {
+    padding: 0 30px;
+  }
+}
+@media (max-width: 820px) {
+  .trade-in {
+    padding: 10px;
+  }
+}
+@media (max-width: 600px) {
+  .trade-in {
+    margin-top: 10px;
+  }
 }
 .trade-in--caption {
   font-weight: 700;
@@ -13,17 +34,50 @@
   line-height: 58.51px;
   color: #000000;
 }
+@media (max-width: 600px) {
+  .trade-in--caption {
+    font-size: 32px;
+    line-height: 39.01px;
+  }
+}
 .trade-in__wrapper {
   display: grid;
   grid-template-columns: 42% 49.5%;
   gap: 100px;
   margin-top: 50px;
 }
+@media (max-width: 1300px) {
+  .trade-in__wrapper {
+    grid-template-columns: 42% 58%;
+    gap: 50px;
+  }
+}
+@media (max-width: 1200px) {
+  .trade-in__wrapper {
+    grid-template-columns: 39% 57%;
+  }
+}
+@media (max-width: 1000px) {
+  .trade-in__wrapper {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+@media (max-width: 600px) {
+  .trade-in__wrapper {
+    margin-top: 35px;
+  }
+}
 .trade-in__offer {
   display: flex;
   flex-direction: column;
   gap: 25px;
   width: 100%;
+}
+@media (max-width: 600px) {
+  .trade-in__offer {
+    width: 98%;
+  }
 }
 .trade-in__offer--text {
   font-weight: 400;
@@ -33,7 +87,13 @@
   white-space: wrap;
   text-align: left;
 }
-.trade-in__offer--button {
+@media (max-width: 600px) {
+  .trade-in__offer--text {
+    font-size: 16px;
+    line-height: 20.8px;
+  }
+}
+.trade-in .trade-in__offer--button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -47,6 +107,20 @@
   height: 52px;
   line-height: 24.38px;
 }
+.trade-in .trade-in__offer--button--adaptive {
+  display: none;
+}
+@media (max-width: 1000px) {
+  .trade-in .trade-in__offer--button {
+    display: none;
+  }
+  .trade-in .trade-in__offer--button--adaptive {
+    display: block;
+    margin-top: 5px;
+    justify-self: center;
+    width: 340px;
+  }
+}
 .trade-in__accordion {
   display: flex;
   gap: 25px;
@@ -54,19 +128,9 @@
   width: 100%;
   margin-top: 15px;
 }
-@media (max-width: 1600px) {
+@media (max-width: 600px) {
   .trade-in__accordion {
-    padding: 0 100px;
-  }
-}
-@media (max-width: 1200px) {
-  .trade-in__accordion {
-    padding: 0 30px;
-  }
-}
-@media (max-width: 820px) {
-  .trade-in__accordion {
-    padding: 10px;
+    margin-top: 0;
   }
 }
 .trade-in__accordion .ac {
@@ -74,6 +138,12 @@
   border: none;
   height: 51px;
   transition: all 0.3s ease;
+}
+@media (max-width: 600px) {
+  .trade-in__accordion .ac {
+    min-height: 48px;
+    height: auto;
+  }
 }
 .trade-in__accordion .ac.is-active {
   height: 100%;
@@ -88,17 +158,25 @@
   border: none;
   outline: none;
 }
+@media (max-width: 600px) {
+  .trade-in__accordion .ac-header {
+    min-height: 48px;
+    height: auto;
+  }
+}
 .trade-in__accordion .ac-trigger {
   font-weight: 400;
   font-size: 24px;
   line-height: 31.2px;
   color: #000000;
   background-color: var(--white);
+  white-space: nowrap;
 }
-@media (max-width: 820px) {
+@media (max-width: 600px) {
   .trade-in__accordion .ac-trigger {
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 20px;
+    line-height: 26px;
+    white-space: wrap;
   }
 }
 .trade-in__accordion .ac-trigger:after {
@@ -124,9 +202,23 @@
   white-space: wrap;
   text-align: left;
 }
+@media (max-width: 600px) {
+  .trade-in__accordion .ac .ac-panel .ac-text {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
 .trade-in__accordion .ac.js-enabled .ac-panel {
   opacity: 0;
-  transition: all 0.35s ease !important;
+  transition: all 0.3s ease !important;
+}
+.trade-in__accordion .ac.is-active {
+  height: 100%;
+}
+@media (max-width: 600px) {
+  .trade-in__accordion .ac.is-active {
+    height: auto;
+  }
 }
 .trade-in__accordion .ac.is-active .ac-panel {
   opacity: 1;

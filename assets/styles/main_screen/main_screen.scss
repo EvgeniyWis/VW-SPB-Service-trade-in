@@ -29,8 +29,17 @@
         height: 500px;
         object-fit: cover;
 
-        @media (max-width: 500px) {
-            max-height: 74%;
+        &--adaptive {
+            display: none;
+        }
+
+        @media (max-width: 600px) {
+            display: none;
+
+            &--adaptive {
+                display: block;
+                height: 270px;
+            }
         }
     }
 
@@ -45,6 +54,10 @@
         padding: 0 250px;
         margin-top: 15px;
 
+        &--text--adaptive {
+            display: none;
+        }
+
         @media (max-width: 1550px) {
             padding: 10px 100px;
         }
@@ -54,7 +67,15 @@
         }
 
         @media (max-width: 600px) {
-            padding: 50px 10px;
+            padding: 10px 25px;
+
+            &--text {
+                display: none;
+
+                &--adaptive {
+                    display: block;
+                }
+            }
         }
     }
 
