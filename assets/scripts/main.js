@@ -16,3 +16,7 @@ navbar__adaptive_menu_cross.addEventListener("click", () => {
     navbar__adaptive_menu.classList.remove("navbar__adaptive--active");
     popup__background.classList.remove("popup__background__active");
 })
+
+
+/* Инициализация аккордиона */
+new Accordion('#trade-in__accordion');
