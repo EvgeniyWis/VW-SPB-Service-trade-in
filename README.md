@@ -8,6 +8,6 @@
    1. Склонируйте данный репозиторий.
    2. Откройте файл ```index.html```
    
-Или вы можете просто зайти на [сайт](kriswis.github.io/VW-SPB-Service-trade-in/), загруженный на Github Pages.
+Или вы можете просто зайти на [сайт](https://evgeniywis.github.io/VW-SPB-Service-trade-in/), загруженный на Github Pages.
 # Макет:
 ![Service_trade in](https://github.com/KrisWis/VW-SPB-Service-trade-in/assets/94256853/832e4315-a201-433b-a55f-56f0c3644772)
